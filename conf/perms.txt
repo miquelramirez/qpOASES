@@ -1,0 +1,4 @@
+
+[qpOASES:/]
+ferreau = rw
+
