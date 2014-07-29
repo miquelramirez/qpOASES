@@ -2,4 +2,8 @@
 ferreau = rw
 [qpOASES:/trunk]
 potschka = rw
+ckirches = rw
 buchner  = rw
+[qpOASES:/branches]
+potschka = rw
+ckirches = rw
