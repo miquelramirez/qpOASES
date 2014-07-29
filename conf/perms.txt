@@ -1,3 +1,5 @@
 [qpOASES:/]
 ferreau = rw
-
+[qpOASES:/trunk]
+potschka = rw
+buchner  = rw
