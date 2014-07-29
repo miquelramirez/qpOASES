@@ -7,3 +7,6 @@ buchner  = rw
 [qpOASES:/branches]
 potschka = rw
 ckirches = rw
+[qpOASES:/misc]
+potschka = rw
+ckirches = rw
