@@ -219,7 +219,7 @@
 			<!--<maturityLevel>5</maturityLevel>                   -->
 			<!--                                                   -->
 
-			<maturityLevel>?</maturityLevel>
+			<maturityLevel>3</maturityLevel>
 
 			<!--If you have versioning and releases, you should    -->
 			<!--fill in your latest stable version number here.    -->
