@@ -10,3 +10,5 @@ ckirches = rw
 [qpOASES:/misc]
 potschka = rw
 ckirches = rw
+[qpOASES:/misc/testingdata]
+buchner  = rw
