@@ -230,7 +230,7 @@
 			<!--<stableVersionNumber>5.1</stableVersionNumber>     -->
 			<!--                                                   -->
 
-			<stableVersionNumber>3.0</stableVersionNumber>
+			<stableVersionNumber></stableVersionNumber>
 
 			<!--If you have versioning and releases, you should    -->
 			<!--fill in your latest stable release number here.    -->
@@ -241,7 +241,7 @@
 			<!--<releaseVersionNumber>5.1.4</releaseeVersionNumber>-->
 			<!--                                                   -->
 
-			<releaseNumber>3.0.0</releaseNumber>
+			<releaseNumber></releaseNumber>
 
 		</developmentStatus>
 
