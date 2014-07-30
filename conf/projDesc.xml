@@ -39,8 +39,8 @@
 		<!-- Fill in your text below (outside the comment block)       -->
 
 		<projectDescription>
-      qpOASES is an open-source C++ implementation of the recently proposed online active set strategy for solving quadratic programming (QP) problems. It has several theoretical features that make it particularly suited for model predictive control (MPC) applications. Further numerical modifications have made qpOASES a reliable QP solver, even when tackling semi-definite, ill-posed or degenerated QP problems. Moreover, several interfaces to third-party software make qpOASES easy-to-use even for users without knowledge of C/C++.
-    </projectDescription>
+			qpOASES is an open-source C++ implementation of the recently proposed online active set strategy for solving quadratic programming (QP) problems. It has several theoretical features that make it particularly suited for model predictive control (MPC) applications. Further numerical modifications have made qpOASES a reliable QP solver, even when tackling semi-definite, ill-posed or degenerated QP problems. Moreover, several interfaces to third-party software make qpOASES easy-to-use even for users without knowledge of C/C++.
+		</projectDescription>
 
 		<!-- Fill in the project manager's name and (obfuscated)       -->
 		<!-- e-mail address here (only one name allowed).              -->
@@ -164,24 +164,16 @@
 
 		<otherLinkedPackages>
 			<otherPackage>
-				<packageName>BLAS
-                                </packageName>
-				<packageURL>
-                                http://www.netlib.org/blas
-                                </packageURL>
-				<requiredOrOptional>Optional
-                                </requiredOrOptional>
+				<packageName> BLAS </packageName>
+				<packageURL> http://www.netlib.org/blas </packageURL>
+				<requiredOrOptional> Optional </requiredOrOptional>
 			</otherPackage>
 
 			<otherPackage>
-				<packageName>LAPACK
-                                </packageName>
-				<packageURL>
-                                http://www.netlib.org/lapack
-                                </packageURL>
-				<requiredOrOptional>Optional
-                                </requiredOrOptional>
-			</otherPackage>           
+				<packageName> LAPACK </packageName>
+				<packageURL> http://www.netlib.org/lapack </packageURL>
+				<requiredOrOptional> Optional </requiredOrOptional>
+			</otherPackage> 
 		</otherLinkedPackages>
 
 		<!-- Below, you can list the programming language(s) used in   -->
@@ -190,7 +182,7 @@
 		<!--                                                           -->
 		<!--Fill in your text below (outside the comment block).       -->
 
-		<projectLanguage>C++</projectLanguage>
+		<projectLanguage> C++ </projectLanguage>
 
 
 		<!--The following fields describe the development status       -->
@@ -202,7 +194,7 @@
 
 			<!--If you are actively managing your project, use     -->
 
-			<activityStatus>Active</activityStatus>
+			<activityStatus> Active </activityStatus>
 
 			<!--The maturity level is determined during project    -->
 			<!--review and should have been reported to you.       -->
@@ -213,7 +205,7 @@
 			<!--<maturityLevel>5</maturityLevel>                   -->
 			<!--                                                   -->
 
-			<maturityLevel>?</maturityLevel>
+			<maturityLevel> 3 </maturityLevel>
 
 			<!--If you have versioning and releases, you should    -->
 			<!--fill in your latest stable version number here.    -->
@@ -224,7 +216,7 @@
 			<!--<stableVersionNumber>5.1</stableVersionNumber>     -->
 			<!--                                                   -->
 
-			<stableVersionNumber>3.0</stableVersionNumber>
+			<stableVersionNumber> 3.0 </stableVersionNumber>
 
 			<!--If you have versioning and releases, you should    -->
 			<!--fill in your latest stable release number here.    -->
@@ -235,7 +227,7 @@
 			<!--<releaseVersionNumber>5.1.4</releaseeVersionNumber>-->
 			<!--                                                   -->
 
-			<releaseNumber>3.0.0</releaseNumber>
+			<releaseNumber> 3.0.0 </releaseNumber>
 
 		</developmentStatus>
 
@@ -335,15 +327,15 @@
 			<!--    <category>                                     -->
 			<!--        Optimization deterministic linear discrete -->
 			<!--    </category>                                    -->
-      <!--        <category>                                 -->
-			<!--            Optimization deterministic nonlinear   -->
-			<!--        </category>                                -->
+			        <category>
+			            Optimization deterministic nonlinear
+			        </category>
 			<!--    <category>                                     -->
 			<!--        Optimization deterministic nonlinear discrete -->
 			<!--    </category>                                    -->
-			        <category>
-			            Optimization deterministic semidefinite continuous    
-			        </category>                                       
+			<!--    <category>                                     -->
+			<!--        Optimization deterministic semidefinite continuous -->
+			<!--    </category>                                    -->
 			<!--    <category>                                     -->
 			<!--        Optimization stochastic                    -->
 			<!--    </category>                                    -->
@@ -392,7 +384,7 @@
 
 		<sourceCodeDownload> http://www.coin-or.org/download/source/qpOASES </sourceCodeDownload>
 
-    <binaryDownload></binaryDownload>
+		<binaryDownload></binaryDownload>
 
 		<mailingList> http://list.coin-or.org/mailman/listinfo/qpOASES </mailingList>
 
