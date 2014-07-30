@@ -24,7 +24,7 @@
 		<!--                                                           -->
 		<!-- Fill in your text below (outside the comment block).      -->
 
-		<projectName>qpOASES</projectName>
+		<projectName> qpOASES </projectName>
 
 		<!-- Fill in a brief description of your project here.         -->
 		<!-- For example, for SYMPHONY, you might put:                 -->
@@ -117,12 +117,6 @@
 		<!--</coinLinkedProjects>                                      -->
 		<!--                                                           -->
 		<!--Fill in your text below (outside the comment block).       -->
-
-		<coinLinkedProjects>
-			<coinProject>
-				<projectName></projectName>
-			</coinProject>
-		</coinLinkedProjects>
 
 		<!-- Below, you can list other packages your project           -->
 		<!-- either requires or can optionally link to. These are      -->
@@ -219,7 +213,7 @@
 			<!--<maturityLevel>5</maturityLevel>                   -->
 			<!--                                                   -->
 
-			<maturityLevel>3</maturityLevel>
+			<maturityLevel>?</maturityLevel>
 
 			<!--If you have versioning and releases, you should    -->
 			<!--fill in your latest stable version number here.    -->
@@ -230,7 +224,7 @@
 			<!--<stableVersionNumber>5.1</stableVersionNumber>     -->
 			<!--                                                   -->
 
-			<stableVersionNumber></stableVersionNumber>
+			<stableVersionNumber>3.0</stableVersionNumber>
 
 			<!--If you have versioning and releases, you should    -->
 			<!--fill in your latest stable release number here.    -->
@@ -241,7 +235,7 @@
 			<!--<releaseVersionNumber>5.1.4</releaseeVersionNumber>-->
 			<!--                                                   -->
 
-			<releaseNumber></releaseNumber>
+			<releaseNumber>3.0.0</releaseNumber>
 
 		</developmentStatus>
 
