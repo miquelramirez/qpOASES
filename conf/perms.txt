@@ -4,6 +4,8 @@ ferreau = rw
 potschka = rw
 ckirches = rw
 buchner  = rw
+[qpOASES:/trunk/interfaces/python]
+mkudruss = rw
 [qpOASES:/branches]
 potschka = rw
 ckirches = rw
