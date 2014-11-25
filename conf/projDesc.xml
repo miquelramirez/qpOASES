@@ -216,9 +216,12 @@
 			<!--Fill it in like this:                              -->
 			<!--                                                   -->
 			<!--<stableVersionNumber>5.1</stableVersionNumber>     -->
-			<!--                                                   -->
+			<!-- DO NOT USE stableVersionNumber and releaseNumber
+			     unless you need to override the automated version
+			     tracking system.
+			-->
 
-			<stableVersionNumber> 3.0 </stableVersionNumber>
+			<!-- <stableVersionNumber> 3.0 </stableVersionNumber> -->
 
 			<!--If you have versioning and releases, you should    -->
 			<!--fill in your latest stable release number here.    -->
@@ -229,7 +232,7 @@
 			<!--<releaseVersionNumber>5.1.4</releaseeVersionNumber>-->
 			<!--                                                   -->
 
-			<releaseNumber> 3.0.0 </releaseNumber>
+			<!-- <releaseNumber> 3.0.0 </releaseNumber> -->
 
 		</developmentStatus>
 
