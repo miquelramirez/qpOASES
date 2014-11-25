@@ -118,6 +118,8 @@
 		<!--                                                           -->
 		<!--Fill in your text below (outside the comment block).       -->
 
+		<coinLinkedProjects></coinLinkedProjects>
+
 		<!-- Below, you can list other packages your project           -->
 		<!-- either requires or can optionally link to. These are      -->
 		<!-- one by one, as in the following example:                  -->
