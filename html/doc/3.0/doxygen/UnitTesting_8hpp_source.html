@@ -23,7 +23,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">qpOASES
-   &#160;<span id="projectnumber">3.0.0</span>
+   &#160;<span id="projectnumber">3.0.1</span>
    </div>
    
   </td>
@@ -84,38 +84,45 @@
 <a name="l00036"></a>00036 <span class="preprocessor"></span><span class="preprocessor">#define QPOASES_UNIT_TESTING_HPP</span>
 <a name="l00037"></a>00037 <span class="preprocessor"></span>
 <a name="l00038"></a>00038 
-<a name="l00040"></a><a class="code" href="UnitTesting_8hpp.html#a562e15dd66cf158c98dbfec9f6afa1ae">00040</a> <span class="preprocessor">#define TEST_PASSED 0</span>
-<a name="l00041"></a>00041 <span class="preprocessor"></span>
-<a name="l00043"></a><a class="code" href="UnitTesting_8hpp.html#a8b8b91205df891e2c7837bd03795306f">00043</a> <span class="preprocessor">#define TEST_FAILED 1</span>
-<a name="l00044"></a>00044 <span class="preprocessor"></span>
-<a name="l00046"></a><a class="code" href="UnitTesting_8hpp.html#a4c7c64732e3093283c9454eec829adb6">00046</a> <span class="preprocessor">#define TEST_DATA_NOT_FOUND 99</span>
-<a name="l00047"></a>00047 <span class="preprocessor"></span>
-<a name="l00048"></a>00048 
-<a name="l00050"></a><a class="code" href="UnitTesting_8hpp.html#a7b6c78bd097776c03138f05688f60fe5">00050</a> <span class="preprocessor">#define QPOASES_TEST_FOR_EQUAL( x,y ) if ( REFER_NAMESPACE_QPOASES isEqual( (x),(y) ) == BT_FALSE ) { return TEST_FAILED; }</span>
-<a name="l00051"></a>00051 <span class="preprocessor"></span>
-<a name="l00053"></a><a class="code" href="UnitTesting_8hpp.html#af22a02c8ea1585838e2eab8a973815c6">00053</a> <span class="preprocessor">#define QPOASES_TEST_FOR_NEAR( x,y )  if ( REFER_NAMESPACE_QPOASES getAbs((x)-(y)) / REFER_NAMESPACE_QPOASES getMax( 1.0,REFER_NAMESPACE_QPOASES getAbs(x) ) &gt;= 1e-10 ) { return TEST_FAILED; }</span>
-<a name="l00054"></a>00054 <span class="preprocessor"></span>
-<a name="l00056"></a><a class="code" href="UnitTesting_8hpp.html#a04810ded5f1c485cc1a849ad5d20889f">00056</a> <span class="preprocessor">#define QPOASES_TEST_FOR_TRUE( x )  if ( (x) == false ) { return TEST_FAILED; }</span>
-<a name="l00057"></a>00057 <span class="preprocessor"></span>
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 <a class="code" href="Types_8hpp.html#afd127fcb3c8f47975e9fa0ec2bacde52">BEGIN_NAMESPACE_QPOASES</a>
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <a class="code" href="Types_8hpp.html#adee2e4c0805d76ae74d10597f96dd70f">END_NAMESPACE_QPOASES</a>
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066 <span class="preprocessor">#endif  </span><span class="comment">/* UNIT_TESTING */</span>
+<a name="l00039"></a>00039 <span class="preprocessor">#ifndef TEST_TOL_FACTOR</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span><span class="preprocessor">#define TEST_TOL_FACTOR 1</span>
+<a name="l00041"></a>00041 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span>
+<a name="l00043"></a>00043 
+<a name="l00045"></a><a class="code" href="UnitTesting_8hpp.html#a562e15dd66cf158c98dbfec9f6afa1ae">00045</a> <span class="preprocessor">#define TEST_PASSED 0</span>
+<a name="l00046"></a>00046 <span class="preprocessor"></span>
+<a name="l00048"></a><a class="code" href="UnitTesting_8hpp.html#a8b8b91205df891e2c7837bd03795306f">00048</a> <span class="preprocessor">#define TEST_FAILED 1</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00051"></a><a class="code" href="UnitTesting_8hpp.html#a4c7c64732e3093283c9454eec829adb6">00051</a> <span class="preprocessor">#define TEST_DATA_NOT_FOUND 99</span>
+<a name="l00052"></a>00052 <span class="preprocessor"></span>
+<a name="l00053"></a>00053 
+<a name="l00055"></a><a class="code" href="UnitTesting_8hpp.html#a7b6c78bd097776c03138f05688f60fe5">00055</a> <span class="preprocessor">#define QPOASES_TEST_FOR_EQUAL( x,y ) if ( REFER_NAMESPACE_QPOASES isEqual( (x),(y) ) == BT_FALSE ) { return TEST_FAILED; }</span>
+<a name="l00056"></a>00056 <span class="preprocessor"></span>
+<a name="l00058"></a><a class="code" href="UnitTesting_8hpp.html#af22a02c8ea1585838e2eab8a973815c6">00058</a> <span class="preprocessor">#define QPOASES_TEST_FOR_NEAR( x,y )  if ( REFER_NAMESPACE_QPOASES getAbs((x)-(y)) / REFER_NAMESPACE_QPOASES getMax( 1.0,REFER_NAMESPACE_QPOASES getAbs(x) ) &gt;= 1e-10 ) { return TEST_FAILED; }</span>
+<a name="l00059"></a>00059 <span class="preprocessor"></span>
+<a name="l00061"></a><a class="code" href="UnitTesting_8hpp.html#a792f8a2f914b0a031dabfd6a7658ed15">00061</a> <span class="preprocessor">#define QPOASES_TEST_FOR_TOL( x,tol )  if ( (x) &gt; (tol)*(TEST_TOL_FACTOR) ) { return TEST_FAILED; }</span>
+<a name="l00062"></a>00062 <span class="preprocessor"></span>
+<a name="l00064"></a><a class="code" href="UnitTesting_8hpp.html#a04810ded5f1c485cc1a849ad5d20889f">00064</a> <span class="preprocessor">#define QPOASES_TEST_FOR_TRUE( x )  if ( (x) == false ) { return TEST_FAILED; }</span>
+<a name="l00065"></a>00065 <span class="preprocessor"></span>
+<a name="l00066"></a>00066 
 <a name="l00067"></a>00067 
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069 <span class="comment">/*</span>
-<a name="l00070"></a>00070 <span class="comment"> *  end of file</span>
-<a name="l00071"></a>00071 <span class="comment"> */</span>
+<a name="l00068"></a>00068 <a class="code" href="Types_8hpp.html#afd127fcb3c8f47975e9fa0ec2bacde52">BEGIN_NAMESPACE_QPOASES</a>
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 <a class="code" href="Types_8hpp.html#adee2e4c0805d76ae74d10597f96dd70f">END_NAMESPACE_QPOASES</a>
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <span class="preprocessor">#endif  </span><span class="comment">/* UNIT_TESTING */</span>
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 <span class="comment">/*</span>
+<a name="l00078"></a>00078 <span class="comment"> *  end of file</span>
+<a name="l00079"></a>00079 <span class="comment"> */</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 28 2014 21:52:52 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 17 2014 19:30:22 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
