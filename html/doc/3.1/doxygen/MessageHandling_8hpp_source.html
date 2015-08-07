@@ -23,7 +23,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">qpOASES
-   &#160;<span id="projectnumber">3.1.0</span>
+   &#160;<span id="projectnumber">3.1.1</span>
    </div>
    
   </td>
@@ -395,47 +395,47 @@
 <a name="l00430"></a>00430 };
 <a name="l00431"></a>00431 
 <a name="l00432"></a>00432 
-<a name="l00433"></a>00433 <span class="preprocessor">#ifndef __FUNCTION__</span>
+<a name="l00433"></a>00433 <span class="preprocessor">#ifndef __FILE__</span>
 <a name="l00434"></a>00434 <span class="preprocessor"></span>
-<a name="l00435"></a><a class="code" href="MessageHandling_8hpp.html#a828bb1dfda1afd67ca795075903d227d">00435</a> <span class="preprocessor">  #define __FUNCTION__ 0</span>
+<a name="l00435"></a><a class="code" href="MessageHandling_8hpp.html#a2f6bd616afd004b1ce994c2ba2ac9937">00435</a> <span class="preprocessor">  #define __FILE__ 0</span>
 <a name="l00436"></a>00436 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
 <a name="l00437"></a>00437 <span class="preprocessor"></span>
-<a name="l00438"></a>00438 <span class="preprocessor">#ifndef __FILE__</span>
+<a name="l00438"></a>00438 <span class="preprocessor">#ifndef __LINE__</span>
 <a name="l00439"></a>00439 <span class="preprocessor"></span>
-<a name="l00440"></a><a class="code" href="MessageHandling_8hpp.html#a2f6bd616afd004b1ce994c2ba2ac9937">00440</a> <span class="preprocessor">  #define __FILE__ 0</span>
+<a name="l00440"></a><a class="code" href="MessageHandling_8hpp.html#adbfa1be789063f1c21478696be51bb70">00440</a> <span class="preprocessor">  #define __LINE__ 0</span>
 <a name="l00441"></a>00441 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
 <a name="l00442"></a>00442 <span class="preprocessor"></span>
-<a name="l00443"></a>00443 <span class="preprocessor">#ifndef __LINE__</span>
-<a name="l00444"></a>00444 <span class="preprocessor"></span>
-<a name="l00445"></a><a class="code" href="MessageHandling_8hpp.html#adbfa1be789063f1c21478696be51bb70">00445</a> <span class="preprocessor">  #define __LINE__ 0</span>
-<a name="l00446"></a>00446 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00447"></a>00447 <span class="preprocessor"></span>
+<a name="l00444"></a>00444 <span class="comment">/*#define __FUNC__ 0*/</span>
+<a name="l00445"></a><a class="code" href="MessageHandling_8hpp.html#a4e14578a41d311e647f3aee2b628d3dd">00445</a> <span class="preprocessor">#define __FUNC__ (&quot;(no function name provided)&quot;)</span>
+<a name="l00446"></a>00446 <span class="preprocessor"></span><span class="comment">/*#define __FUNC__ __func__*/</span>
+<a name="l00447"></a>00447 <span class="comment">/*#define __FUNC__ __FUNCTION__*/</span>
 <a name="l00448"></a>00448 
-<a name="l00450"></a><a class="code" href="MessageHandling_8hpp.html#a8bc2bee847b74e80aeb52a1375945ed4">00450</a> <span class="preprocessor">#define THROWERROR(retval) ( getGlobalMessageHandler( )-&gt;throwError((retval),0,__FUNCTION__,__FILE__,__LINE__,VS_VISIBLE) )</span>
-<a name="l00451"></a>00451 <span class="preprocessor"></span>
-<a name="l00453"></a><a class="code" href="MessageHandling_8hpp.html#a733e8e8f13934b6799f96a6dc8185439">00453</a> <span class="preprocessor">#define THROWWARNING(retval) ( getGlobalMessageHandler( )-&gt;throwWarning((retval),0,__FUNCTION__,__FILE__,__LINE__,VS_VISIBLE) )</span>
-<a name="l00454"></a>00454 <span class="preprocessor"></span>
-<a name="l00456"></a><a class="code" href="MessageHandling_8hpp.html#a0ef7741d67176593da953e5baa206ce9">00456</a> <span class="preprocessor">#define THROWINFO(retval) ( getGlobalMessageHandler( )-&gt;throwInfo((retval),0,__FUNCTION__,__FILE__,__LINE__,VS_VISIBLE) )</span>
-<a name="l00457"></a>00457 <span class="preprocessor"></span>
-<a name="l00458"></a>00458 
-<a name="l00462"></a>00462 <a class="code" href="classMessageHandling.html" title="Handles all kind of error messages, warnings and other information.">MessageHandling</a>* <a class="code" href="MessageHandling_8cpp.html#aaa22c4eae12c4dd65bdb0459ba26e372">getGlobalMessageHandler</a>( );
-<a name="l00463"></a>00463 
+<a name="l00449"></a>00449 
+<a name="l00451"></a><a class="code" href="MessageHandling_8hpp.html#a8bc2bee847b74e80aeb52a1375945ed4">00451</a> <span class="preprocessor">#define THROWERROR(retval) ( getGlobalMessageHandler( )-&gt;throwError((retval),0,__FUNC__,__FILE__,__LINE__,VS_VISIBLE) )</span>
+<a name="l00452"></a>00452 <span class="preprocessor"></span>
+<a name="l00454"></a><a class="code" href="MessageHandling_8hpp.html#a733e8e8f13934b6799f96a6dc8185439">00454</a> <span class="preprocessor">#define THROWWARNING(retval) ( getGlobalMessageHandler( )-&gt;throwWarning((retval),0,__FUNC__,__FILE__,__LINE__,VS_VISIBLE) )</span>
+<a name="l00455"></a>00455 <span class="preprocessor"></span>
+<a name="l00457"></a><a class="code" href="MessageHandling_8hpp.html#a0ef7741d67176593da953e5baa206ce9">00457</a> <span class="preprocessor">#define THROWINFO(retval) ( getGlobalMessageHandler( )-&gt;throwInfo((retval),0,__FUNC__,__FILE__,__LINE__,VS_VISIBLE) )</span>
+<a name="l00458"></a>00458 <span class="preprocessor"></span>
+<a name="l00459"></a>00459 
+<a name="l00463"></a>00463 <a class="code" href="classMessageHandling.html" title="Handles all kind of error messages, warnings and other information.">MessageHandling</a>* <a class="code" href="MessageHandling_8cpp.html#aaa22c4eae12c4dd65bdb0459ba26e372">getGlobalMessageHandler</a>( );
 <a name="l00464"></a>00464 
-<a name="l00465"></a>00465 <a class="code" href="Types_8hpp.html#adee2e4c0805d76ae74d10597f96dd70f">END_NAMESPACE_QPOASES</a>
-<a name="l00466"></a>00466 
-<a name="l00467"></a>00467 <span class="preprocessor">#include &lt;<a class="code" href="MessageHandling_8ipp.html">qpOASES/MessageHandling.ipp</a>&gt;</span>
-<a name="l00468"></a>00468 
-<a name="l00469"></a>00469 <span class="preprocessor">#endif </span><span class="comment">/* QPOASES_MESSAGEHANDLING_HPP */</span>
-<a name="l00470"></a>00470 
+<a name="l00465"></a>00465 
+<a name="l00466"></a>00466 <a class="code" href="Types_8hpp.html#adee2e4c0805d76ae74d10597f96dd70f">END_NAMESPACE_QPOASES</a>
+<a name="l00467"></a>00467 
+<a name="l00468"></a>00468 <span class="preprocessor">#include &lt;<a class="code" href="MessageHandling_8ipp.html">qpOASES/MessageHandling.ipp</a>&gt;</span>
+<a name="l00469"></a>00469 
+<a name="l00470"></a>00470 <span class="preprocessor">#endif </span><span class="comment">/* QPOASES_MESSAGEHANDLING_HPP */</span>
 <a name="l00471"></a>00471 
-<a name="l00472"></a>00472 <span class="comment">/*</span>
-<a name="l00473"></a>00473 <span class="comment"> *  end of file</span>
-<a name="l00474"></a>00474 <span class="comment"> */</span>
+<a name="l00472"></a>00472 
+<a name="l00473"></a>00473 <span class="comment">/*</span>
+<a name="l00474"></a>00474 <span class="comment"> *  end of file</span>
+<a name="l00475"></a>00475 <span class="comment"> */</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 12 2015 15:49:47 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Aug 7 2015 19:11:00 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
