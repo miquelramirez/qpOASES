@@ -55,8 +55,7 @@
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Defines</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">include/qpOASES/Matrices.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -98,10 +97,6 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrices_8hpp.html#a42495df75d1c4859ee2f7a4a3d7f57ca">ssyr2_</a> (const char *, const unsigned long *, const float *, const float *, const unsigned long *, const float *, const unsigned long *, float *, const unsigned long *)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrices_8hpp.html#a5bad6f61c16311987c9286e9bb161006">dpotrf_</a> (const char *, const unsigned long *, double *, const unsigned long *, long *)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrices_8hpp.html#a519c3855d35f97aeeb2b8e583846c2f0">spotrf_</a> (const char *, const unsigned long *, float *, const unsigned long *, long *)</td></tr>
-<tr><td colspan="2"><h2><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#afd127fcb3c8f47975e9fa0ec2bacde52">BEGIN_NAMESPACE_QPOASES</a> <br class="typebreak"/>
-typedef <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><dl class="author"><dt><b>Author:</b></dt><dd>Andreas Potschka, Hans Joachim Ferreau, Christian Kirches </dd></dl>
@@ -714,29 +709,11 @@ typedef <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">i
 
 </div>
 </div>
-<hr/><h2>Variable Documentation</h2>
-<a class="anchor" id="af04e1930308c2ab2c70b2edf51310d5f"></a><!-- doxytag: member="Matrices.hpp::sparse_int_t" ref="af04e1930308c2ab2c70b2edf51310d5f" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="Types_8hpp.html#afd127fcb3c8f47975e9fa0ec2bacde52">BEGIN_NAMESPACE_QPOASES</a> typedef <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> <a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Integer type for sparse matrix row/column entries. Make this "int" for 32 bit entries, and "long" for 64-bit entries on x86_64 platform.</p>
-<p>Most sparse codes still assume 32-bit entries here (HSL, BQPD, ...) </p>
-
-<p>Referenced by <a class="el" href="classSQProblemSchur.html#a9a06eeb8e518946742202e927b3fdd7b">SQProblemSchur::addBound()</a>, <a class="el" href="classSQProblemSchur.html#aa40b7dd26d8f458c6b9fc038dcb42780">SQProblemSchur::addConstraint()</a>, <a class="el" href="classSQProblemSchur.html#a64565efc5cfede3b44d382d8206fbe55">SQProblemSchur::addToSchurComplement()</a>, <a class="el" href="classSQProblemSchur.html#a36259e97b43141dd9400cdfc22a0eca6">SQProblemSchur::copy()</a>, <a class="el" href="classSparseMatrix.html#ac81c1ddda42b186de118b6eab49a1852">SparseMatrix::createDiagInfo()</a>, <a class="el" href="classSparseMatrixRow.html#a3e72a351698454ba063f3b0814f919c8">SparseMatrixRow::createDiagInfo()</a>, <a class="el" href="classQProblemB.html#a53fb5975dddabd52e3cbc1062f2faa7d">QProblemB::createDiagSparseMat()</a>, <a class="el" href="classSparseMatrix.html#a70730929e8ffab371a520574d3afa2e0">SparseMatrix::duplicate()</a>, <a class="el" href="classSparseMatrixRow.html#afd8b02e3332e03dc702b9d8c12dbc4a8">SparseMatrixRow::duplicate()</a>, <a class="el" href="classSymSparseMat.html#a7d59b9fc338df93b4539d33dd30882bd">SymSparseMat::duplicateSym()</a>, <a class="el" href="classSparseMatrix.html#a0c7a457cde991c5e1309a671e62a169d">SparseMatrix::full()</a>, <a class="el" href="classSparseMatrixRow.html#acc769f595994a52a06d9d0fb7fb37a7b">SparseMatrixRow::full()</a>, <a class="el" href="classSQProblemSchur.html#a0e7968b4acb726701750ffd862ffb7be">SQProblemSchur::removeBound()</a>, <a class="el" href="classSQProblemSchur.html#ac441780d4b9ff25896c7a35fb481f887">SQProblemSchur::removeConstraint()</a>, <a class="el" href="classSparseMatrix.html#a0314dc0fa81c0cbedda7e8974dec3b80">SparseMatrix::SparseMatrix()</a>, <a class="el" href="classSparseMatrixRow.html#a998eef85d2cbe8d4c3856c043388c38d">SparseMatrixRow::SparseMatrixRow()</a>, and <a class="el" href="classSQProblemSchur.html#af9e29aabfa450e256b3e67fb8b441b3d">SQProblemSchur::SQProblemSchur()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 27 2015 20:22:35 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2015 20:54:55 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

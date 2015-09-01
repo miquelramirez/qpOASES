@@ -89,6 +89,7 @@ Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12a1e9b3ce141648783a82445d02b58d"></a><!-- doxytag: member="Types.hpp::uint_t" ref="a12a1e9b3ce141648783a82445d02b58d" args="" -->
 typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>uint_t</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Types_8hpp.html#a20f82124c82b6f5686a7fce454ef9089">BooleanType</a> { <a class="el" href="Types_8hpp.html#a20f82124c82b6f5686a7fce454ef9089a85b8a20e72a8bea5dd10a6007fe3071e">BT_FALSE</a>, 
@@ -357,6 +358,21 @@ typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div>
 <div class="memdoc">
 <p>Defines int_t for facilitating switching between int and long int. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa5432b00c9081e2d62d7f38c32e4ed80"></a><!-- doxytag: member="Types.hpp::sparse_int_t" ref="aa5432b00c9081e2d62d7f38c32e4ed80" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> <a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Integer type for sparse matrix row/column entries. Make this "int" for 32 bit entries, and "long" for 64-bit entries on x86_64 platform.</p>
+<p>Most sparse codes still assume 32-bit entries here (HSL, BQPD, ...) </p>
 
 </div>
 </div>
@@ -643,7 +659,7 @@ typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 27 2015 20:22:35 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2015 20:54:55 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

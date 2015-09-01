@@ -81,7 +81,7 @@ Inheritance diagram for SparseMatrix:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#ac010252479e500b34324cb10c9dd4e98">SparseMatrix</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a217f2c93982407f7b8b81c189be329bd">SparseMatrix</a> (<a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> nr, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> nc, <a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> *r, <a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> *c, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *v)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a217f2c93982407f7b8b81c189be329bd">SparseMatrix</a> (<a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> nr, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> nc, <a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> *r, <a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> *c, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a0314dc0fa81c0cbedda7e8974dec3b80">SparseMatrix</a> (<a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> nr, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> nc, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> ld, const <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *const v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a5d93890df585cae1602c07b2cbcce923">~SparseMatrix</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a79d5aeb24f1b1184b9fb798144999ea2">free</a> ()</td></tr>
@@ -98,7 +98,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e">returnValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a7369b0cfc7f1fdce7d8bdb015895169b">times</a> (const <a class="el" href="classIndexlist.html">Indexlist</a> *const irows, const <a class="el" href="classIndexlist.html">Indexlist</a> *const icols, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> xN, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> alpha, const <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *x, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> xLD, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> beta, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *y, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> yLD, <a class="el" href="Types_8hpp.html#a20f82124c82b6f5686a7fce454ef9089">BooleanType</a> yCompr=<a class="el" href="Types_8hpp.html#a20f82124c82b6f5686a7fce454ef9089a34c57965bfb07125b09326a69019f9c6">BT_TRUE</a>) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e">returnValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a5c9fc5bf94e391fbb0ade0670fb44194">transTimes</a> (const <a class="el" href="classIndexlist.html">Indexlist</a> *const irows, const <a class="el" href="classIndexlist.html">Indexlist</a> *const icols, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> xN, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> alpha, const <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *x, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> xLD, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> beta, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *y, <a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> yLD) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e">returnValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a11500e9368167d4c0643fe0cebf2ccd6">addToDiag</a> (<a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> alpha)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#ac81c1ddda42b186de118b6eab49a1852">createDiagInfo</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#ac81c1ddda42b186de118b6eab49a1852">createDiagInfo</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a0c7a457cde991c5e1309a671e62a169d">full</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e">returnValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a04660176714eb90ea2457d34d1f37b6b">print</a> (const char *name=0) const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e">returnValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a8d2d996105c1c97b9ea938539880a1e6">writeToFile</a> (FILE *output_file, const char *prefix) const </td></tr>
@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#abef34a6737a6253676e85ea7350e882b">nRows</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a25c7628d9d0944161c25566900b49631">jd</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#a25c7628d9d0944161c25566900b49631">jd</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSparseMatrix.html#aa8f38b3ba839a4b3e7d04fb66d4fca7b">val</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="Types_8hpp.html#a20f82124c82b6f5686a7fce454ef9089">BooleanType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMatrix.html#a4589bd2bde0875fe3ac82f1f97684c67">freeMemory</a></td></tr>
 </table>
@@ -162,13 +162,13 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> *&#160;</td>
           <td class="paramname"><em>r</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> *&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
@@ -248,7 +248,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>References <a class="el" href="Types_8hpp.html#a20f82124c82b6f5686a7fce454ef9089a85b8a20e72a8bea5dd10a6007fe3071e">BT_FALSE</a>, <a class="el" href="classMatrix.html#a9b1c0fc70cad1b88d6e6ab960bda478d">Matrix::doFreeMemory()</a>, <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a>, <a class="el" href="Utils_8hpp.html#ada3e3a57db2e3e7963a0b0426e54e38c">isZero()</a>, <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a>, <a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a>, <a class="el" href="classSparseMatrix.html#abef34a6737a6253676e85ea7350e882b">nRows</a>, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>, <a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a>, and <a class="el" href="classSparseMatrix.html#aa8f38b3ba839a4b3e7d04fb66d4fca7b">val</a>.</p>
+<p>References <a class="el" href="Types_8hpp.html#a20f82124c82b6f5686a7fce454ef9089a85b8a20e72a8bea5dd10a6007fe3071e">BT_FALSE</a>, <a class="el" href="classMatrix.html#a9b1c0fc70cad1b88d6e6ab960bda478d">Matrix::doFreeMemory()</a>, <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a>, <a class="el" href="Utils_8hpp.html#ada3e3a57db2e3e7963a0b0426e54e38c">isZero()</a>, <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a>, <a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a>, <a class="el" href="classSparseMatrix.html#abef34a6737a6253676e85ea7350e882b">nRows</a>, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>, and <a class="el" href="classSparseMatrix.html#aa8f38b3ba839a4b3e7d04fb66d4fca7b">val</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a> * <a class="el" href="classSparseMatrix.html#ac81c1ddda42b186de118b6eab49a1852">SparseMatrix::createDiagInfo</a> </td>
+          <td class="memname"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a> * <a class="el" href="classSparseMatrix.html#ac81c1ddda42b186de118b6eab49a1852">SparseMatrix::createDiagInfo</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -318,7 +318,7 @@ Protected Attributes</h2></td></tr>
 <p>Create jd field from ir and jc. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to jd. </dd></dl>
 
-<p>References <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a>, <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a>, <a class="el" href="classSparseMatrix.html#a25c7628d9d0944161c25566900b49631">jd</a>, <a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a>, and <a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a>.</p>
+<p>References <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a>, <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a>, <a class="el" href="classSparseMatrix.html#a25c7628d9d0944161c25566900b49631">jd</a>, and <a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a>.</p>
 
 <p>Referenced by <a class="el" href="classQProblemB.html#a53fb5975dddabd52e3cbc1062f2faa7d">QProblemB::createDiagSparseMat()</a>, and <a class="el" href="OQPinterface_8hpp.html#a4889605344b91923c126d321ebec9686">solveOqpBenchmark()</a>.</p>
 
@@ -413,7 +413,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classSymSparseMat.html#af125b7a9ba07555c7b6930b21637cc87">SymSparseMat</a>.</p>
 
-<p>References <a class="el" href="classMatrix.html#a9b1c0fc70cad1b88d6e6ab960bda478d">Matrix::doFreeMemory()</a>, <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a>, <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a>, <a class="el" href="classSparseMatrix.html#a25c7628d9d0944161c25566900b49631">jd</a>, <a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a>, <a class="el" href="classSparseMatrix.html#abef34a6737a6253676e85ea7350e882b">nRows</a>, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>, <a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a>, <a class="el" href="classSparseMatrix.html#ac010252479e500b34324cb10c9dd4e98">SparseMatrix()</a>, and <a class="el" href="classSparseMatrix.html#aa8f38b3ba839a4b3e7d04fb66d4fca7b">val</a>.</p>
+<p>References <a class="el" href="classMatrix.html#a9b1c0fc70cad1b88d6e6ab960bda478d">Matrix::doFreeMemory()</a>, <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a>, <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a>, <a class="el" href="classSparseMatrix.html#a25c7628d9d0944161c25566900b49631">jd</a>, <a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a>, <a class="el" href="classSparseMatrix.html#abef34a6737a6253676e85ea7350e882b">nRows</a>, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>, <a class="el" href="classSparseMatrix.html#ac010252479e500b34324cb10c9dd4e98">SparseMatrix()</a>, and <a class="el" href="classSparseMatrix.html#aa8f38b3ba839a4b3e7d04fb66d4fca7b">val</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classMatrix.html#ac53a5bbb05c6a928af17e0d88220ff63">Matrix</a>.</p>
 
-<p>References <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a>, <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a>, <a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a>, <a class="el" href="classSparseMatrix.html#abef34a6737a6253676e85ea7350e882b">nRows</a>, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>, <a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a>, and <a class="el" href="classSparseMatrix.html#aa8f38b3ba839a4b3e7d04fb66d4fca7b">val</a>.</p>
+<p>References <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">ir</a>, <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">jc</a>, <a class="el" href="classSparseMatrix.html#a5cdff014cc202f3c6c906fa8b8a4317a">nCols</a>, <a class="el" href="classSparseMatrix.html#abef34a6737a6253676e85ea7350e882b">nRows</a>, <a class="el" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>, and <a class="el" href="classSparseMatrix.html#aa8f38b3ba839a4b3e7d04fb66d4fca7b">val</a>.</p>
 
 <p>Referenced by <a class="el" href="classSparseMatrix.html#a04660176714eb90ea2457d34d1f37b6b">print()</a>.</p>
 
@@ -1467,7 +1467,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a>* <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">SparseMatrix::ir</a><code> [protected]</code></td>
+          <td class="memname"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a>* <a class="el" href="classSparseMatrix.html#a31cffc07bca675d7feb34cac91cd378b">SparseMatrix::ir</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1483,7 +1483,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a>* <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">SparseMatrix::jc</a><code> [protected]</code></td>
+          <td class="memname"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a>* <a class="el" href="classSparseMatrix.html#af03f3af2ef00771022a26d5b86e40399">SparseMatrix::jc</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1499,7 +1499,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Matrices_8hpp.html#af04e1930308c2ab2c70b2edf51310d5f">sparse_int_t</a>* <a class="el" href="classSparseMatrix.html#a25c7628d9d0944161c25566900b49631">SparseMatrix::jd</a><code> [protected]</code></td>
+          <td class="memname"><a class="el" href="Types_8hpp.html#aa5432b00c9081e2d62d7f38c32e4ed80">sparse_int_t</a>* <a class="el" href="classSparseMatrix.html#a25c7628d9d0944161c25566900b49631">SparseMatrix::jd</a><code> [protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1566,7 +1566,7 @@ Protected Attributes</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 27 2015 20:22:36 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 1 2015 20:54:56 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
