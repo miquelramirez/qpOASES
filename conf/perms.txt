@@ -6,7 +6,6 @@ ckirches = rw
 buchner  = rw
 ghorn    = rw
 djanka   = rw
-[qpOASES:/trunk/interfaces/python]
 mkudruss = rw
 swalter  = rw
 [qpOASES:/branches]
