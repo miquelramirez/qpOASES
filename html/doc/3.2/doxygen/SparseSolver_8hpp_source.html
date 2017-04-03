@@ -23,7 +23,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">qpOASES
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.2.1</span>
    </div>
    <div id="projectbrief">An Implementation of the Online Active Set Strategy</div>
   </td>
@@ -60,8 +60,8 @@
 <a name="l00002"></a>00002 <span class="comment"> *  This file is part of qpOASES.</span>
 <a name="l00003"></a>00003 <span class="comment"> *</span>
 <a name="l00004"></a>00004 <span class="comment"> *  qpOASES -- An Implementation of the Online Active Set Strategy.</span>
-<a name="l00005"></a>00005 <span class="comment"> *</span>
-<a name="l00006"></a>00006 <span class="comment"> *  Copyright (C) 2012 by Andreas Waechter. All rights reserved.</span>
+<a name="l00005"></a>00005 <span class="comment"> *  Copyright (C) 2007-2017 by Hans Joachim Ferreau, Andreas Potschka,</span>
+<a name="l00006"></a>00006 <span class="comment"> *  Christian Kirches et al. All rights reserved.</span>
 <a name="l00007"></a>00007 <span class="comment"> *</span>
 <a name="l00008"></a>00008 <span class="comment"> *  qpOASES is free software; you can redistribute it and/or</span>
 <a name="l00009"></a>00009 <span class="comment"> *  modify it under the terms of the GNU Lesser General Public</span>
@@ -98,12 +98,12 @@
 <a name="l00059"></a>00059         <a class="code" href="classSparseSolver.html#a2110cd4c01cd32d500d0669f400aa62e">SparseSolver</a>( );
 <a name="l00060"></a>00060 
 <a name="l00062"></a>00062         <a class="code" href="classSparseSolver.html#a2110cd4c01cd32d500d0669f400aa62e">SparseSolver</a>(   <span class="keyword">const</span> <a class="code" href="classSparseSolver.html" title="Base class for linear solvers that are used in a Schur-complement implementation in qpOASES...">SparseSolver</a>&amp; rhs     
-<a name="l00063"></a>00063                     );
+<a name="l00063"></a>00063                         );
 <a name="l00064"></a>00064 
 <a name="l00066"></a>00066         <span class="keyword">virtual</span> <a class="code" href="classSparseSolver.html#a3caecef282cba18aa863de94135f9617">~SparseSolver</a>( );
 <a name="l00067"></a>00067 
 <a name="l00069"></a>00069         <span class="keyword">virtual</span> <a class="code" href="classSparseSolver.html" title="Base class for linear solvers that are used in a Schur-complement implementation in qpOASES...">SparseSolver</a>&amp; <a class="code" href="classSparseSolver.html#a1215b429a4ca226cac50b67ca78ec78a">operator=</a>(    <span class="keyword">const</span> <a class="code" href="classSparseSolver.html" title="Base class for linear solvers that are used in a Schur-complement implementation in qpOASES...">SparseSolver</a>&amp; rhs 
-<a name="l00070"></a>00070                                 );
+<a name="l00070"></a>00070                                             );
 <a name="l00071"></a>00071 
 <a name="l00075"></a>00075         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a875146c92fbf3ea67cfc17233ba391e9">setMatrixData</a>( <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> dim,                   
 <a name="l00076"></a>00076                                            <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> numNonzeros,           
@@ -154,12 +154,12 @@
 <a name="l00139"></a>00139         Ma27SparseSolver( );
 <a name="l00140"></a>00140 
 <a name="l00142"></a>00142         Ma27SparseSolver(   <span class="keyword">const</span> Ma27SparseSolver&amp; rhs     
-<a name="l00143"></a>00143                     );
+<a name="l00143"></a>00143                             );
 <a name="l00144"></a>00144 
 <a name="l00146"></a>00146         <span class="keyword">virtual</span> ~Ma27SparseSolver( );
 <a name="l00147"></a>00147 
 <a name="l00149"></a>00149         <span class="keyword">virtual</span> Ma27SparseSolver&amp; <a class="code" href="classSparseSolver.html#a1215b429a4ca226cac50b67ca78ec78a">operator=</a>(    <span class="keyword">const</span> <a class="code" href="classSparseSolver.html" title="Base class for linear solvers that are used in a Schur-complement implementation in qpOASES...">SparseSolver</a>&amp; rhs 
-<a name="l00150"></a>00150                                 );
+<a name="l00150"></a>00150                                                 );
 <a name="l00151"></a>00151 
 <a name="l00155"></a>00155         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a875146c92fbf3ea67cfc17233ba391e9">setMatrixData</a>( <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> dim,                   
 <a name="l00156"></a>00156                                            <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> numNonzeros,           
@@ -198,26 +198,26 @@
 <a name="l00198"></a>00198 <span class="comment">     *  PRIVATE MEMBER VARIABLES</span>
 <a name="l00199"></a>00199 <span class="comment">     */</span>
 <a name="l00200"></a>00200     <span class="keyword">private</span>:
-<a name="l00201"></a>00201         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> dim; 
-<a name="l00203"></a>00203         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> numNonzeros; 
-<a name="l00205"></a>00205         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> la_ma27; 
+<a name="l00201"></a>00201         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> dim; 
+<a name="l00203"></a>00203         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> numNonzeros; 
+<a name="l00205"></a>00205         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> la_ma27; 
 <a name="l00207"></a>00207         <span class="keywordtype">double</span>* a_ma27; 
-<a name="l00209"></a>00209         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a>* irn_ma27; 
-<a name="l00211"></a>00211         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a>* jcn_ma27; 
-<a name="l00213"></a>00213         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> icntl_ma27[30];  
+<a name="l00209"></a>00209         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a>* irn_ma27; 
+<a name="l00211"></a>00211         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a>* jcn_ma27; 
+<a name="l00213"></a>00213         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> icntl_ma27[30];  
 <a name="l00215"></a>00215         <span class="keywordtype">double</span> cntl_ma27[5];  
-<a name="l00217"></a>00217         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> liw_ma27;  
-<a name="l00219"></a>00219         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a>* iw_ma27; 
-<a name="l00221"></a>00221         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a>* ikeep_ma27;  
-<a name="l00223"></a>00223         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> nsteps_ma27;  
-<a name="l00225"></a>00225         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> maxfrt_ma27;  
+<a name="l00217"></a>00217         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> liw_ma27;  
+<a name="l00219"></a>00219         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a>* iw_ma27; 
+<a name="l00221"></a>00221         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a>* ikeep_ma27;  
+<a name="l00223"></a>00223         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> nsteps_ma27;  
+<a name="l00225"></a>00225         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> maxfrt_ma27;  
 <a name="l00227"></a>00227         <span class="keywordtype">bool</span> have_factorization; 
-<a name="l00229"></a>00229         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> neig;  
-<a name="l00231"></a>00231         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> rank;  
+<a name="l00229"></a>00229         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> neig;    
+<a name="l00231"></a>00231         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> rank;    
 <a name="l00232"></a>00232 };
 <a name="l00233"></a>00233 
-<a name="l00234"></a>00234 <span class="preprocessor">#endif // SOLVER_MA27</span>
-<a name="l00235"></a>00235 <span class="preprocessor"></span>
+<a name="l00234"></a>00234 <span class="preprocessor">#endif </span><span class="comment">/* SOLVER_MA27 */</span>
+<a name="l00235"></a>00235 
 <a name="l00236"></a>00236 
 <a name="l00237"></a>00237 <span class="preprocessor">#ifdef SOLVER_MA57</span>
 <a name="l00238"></a>00238 <span class="preprocessor"></span>
@@ -230,12 +230,12 @@
 <a name="l00253"></a>00253         Ma57SparseSolver( );
 <a name="l00254"></a>00254 
 <a name="l00256"></a>00256         Ma57SparseSolver(   <span class="keyword">const</span> Ma57SparseSolver&amp; rhs     
-<a name="l00257"></a>00257                     );
+<a name="l00257"></a>00257                             );
 <a name="l00258"></a>00258 
 <a name="l00260"></a>00260         <span class="keyword">virtual</span> ~Ma57SparseSolver( );
 <a name="l00261"></a>00261 
 <a name="l00263"></a>00263         <span class="keyword">virtual</span> Ma57SparseSolver&amp; <a class="code" href="classSparseSolver.html#a1215b429a4ca226cac50b67ca78ec78a">operator=</a>(    <span class="keyword">const</span> <a class="code" href="classSparseSolver.html" title="Base class for linear solvers that are used in a Schur-complement implementation in qpOASES...">SparseSolver</a>&amp; rhs 
-<a name="l00264"></a>00264                                 );
+<a name="l00264"></a>00264                                                 );
 <a name="l00265"></a>00265 
 <a name="l00269"></a>00269         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a875146c92fbf3ea67cfc17233ba391e9">setMatrixData</a>( <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> dim,                   
 <a name="l00270"></a>00270                                            <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> numNonzeros,           
@@ -257,82 +257,83 @@
 <a name="l00290"></a>00290 
 <a name="l00292"></a>00292         <span class="keyword">virtual</span> <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> <a class="code" href="classSparseSolver.html#a99e865b040662425f112e48cb74aa9ce">getRank</a>( );
 <a name="l00293"></a>00293 
-<a name="l00295"></a>00295         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a0c5a2e2132ccec5732252f1786998406">getZeroPivots</a>( <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> *&amp;zeroPivots );
-<a name="l00296"></a>00296     <span class="comment">/*</span>
-<a name="l00297"></a>00297 <span class="comment">     *  PROTECTED MEMBER FUNCTIONS</span>
-<a name="l00298"></a>00298 <span class="comment">     */</span>
-<a name="l00299"></a>00299     <span class="keyword">protected</span>:
-<a name="l00302"></a>00302         <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a3471628e99d49f5c2ec94573f00d7f9c">clear</a>( );
-<a name="l00303"></a>00303 
-<a name="l00306"></a>00306         <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a0d39524a52ac941663c6789d00282494">copy</a>(   <span class="keyword">const</span> Ma57SparseSolver&amp; rhs 
-<a name="l00307"></a>00307                             );
-<a name="l00308"></a>00308 
-<a name="l00309"></a>00309     <span class="comment">/*</span>
-<a name="l00310"></a>00310 <span class="comment">     *  PRIVATE MEMBER FUNCTIONS</span>
-<a name="l00311"></a>00311 <span class="comment">     */</span>
-<a name="l00312"></a>00312     <span class="keyword">private</span>:
-<a name="l00313"></a>00313     <span class="comment">/*</span>
-<a name="l00314"></a>00314 <span class="comment">     *  PRIVATE MEMBER VARIABLES</span>
-<a name="l00315"></a>00315 <span class="comment">     */</span>
-<a name="l00316"></a>00316     <span class="keyword">private</span>:
-<a name="l00317"></a>00317         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> dim;               
-<a name="l00319"></a>00319         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> numNonzeros;       
-<a name="l00321"></a>00321         <span class="keywordtype">double</span>* a_ma57;         
-<a name="l00323"></a>00323         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a>* irn_ma57;         
-<a name="l00325"></a>00325         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a>* jcn_ma57;         
-<a name="l00327"></a>00327         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> icntl_ma57[30];    
-<a name="l00329"></a>00329         <span class="keywordtype">double</span> cntl_ma57[5];    
-<a name="l00331"></a>00331         <span class="keywordtype">double</span>* fact_ma57;      
-<a name="l00333"></a>00333         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> lfact_ma57;        
-<a name="l00335"></a>00335         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a>* ifact_ma57;       
-<a name="l00337"></a>00337         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> lifact_ma57;       
-<a name="l00339"></a>00339         <span class="keywordtype">bool</span> have_factorization;
-<a name="l00341"></a>00341         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> neig;              
-<a name="l00343"></a>00343         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a> rank;              
-<a name="l00345"></a>00345         <a class="code" href="Types_8hpp.html#abbadc35b786b60c71fe7e77fa565acf4">fint</a>* pivots;           
-<a name="l00346"></a>00346 };
-<a name="l00347"></a>00347 
-<a name="l00348"></a>00348 <span class="preprocessor">#endif // SOLVER_MA57</span>
-<a name="l00349"></a>00349 <span class="preprocessor"></span>
+<a name="l00295"></a>00295         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a0c5a2e2132ccec5732252f1786998406">getZeroPivots</a>(  <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>* &amp;zeroPivots  
+<a name="l00296"></a>00296                                             );
+<a name="l00297"></a>00297     <span class="comment">/*</span>
+<a name="l00298"></a>00298 <span class="comment">     *  PROTECTED MEMBER FUNCTIONS</span>
+<a name="l00299"></a>00299 <span class="comment">     */</span>
+<a name="l00300"></a>00300     <span class="keyword">protected</span>:
+<a name="l00303"></a>00303         <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a3471628e99d49f5c2ec94573f00d7f9c">clear</a>( );
+<a name="l00304"></a>00304 
+<a name="l00307"></a>00307         <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a0d39524a52ac941663c6789d00282494">copy</a>(   <span class="keyword">const</span> Ma57SparseSolver&amp; rhs 
+<a name="l00308"></a>00308                             );
+<a name="l00309"></a>00309 
+<a name="l00310"></a>00310     <span class="comment">/*</span>
+<a name="l00311"></a>00311 <span class="comment">     *  PRIVATE MEMBER FUNCTIONS</span>
+<a name="l00312"></a>00312 <span class="comment">     */</span>
+<a name="l00313"></a>00313     <span class="keyword">private</span>:
+<a name="l00314"></a>00314     <span class="comment">/*</span>
+<a name="l00315"></a>00315 <span class="comment">     *  PRIVATE MEMBER VARIABLES</span>
+<a name="l00316"></a>00316 <span class="comment">     */</span>
+<a name="l00317"></a>00317     <span class="keyword">private</span>:
+<a name="l00318"></a>00318         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> dim;             
+<a name="l00320"></a>00320         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> numNonzeros;     
+<a name="l00322"></a>00322         <span class="keywordtype">double</span>* a_ma57;         
+<a name="l00324"></a>00324         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a>* irn_ma57;           
+<a name="l00326"></a>00326         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a>* jcn_ma57;           
+<a name="l00328"></a>00328         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> icntl_ma57[30];  
+<a name="l00330"></a>00330         <span class="keywordtype">double</span> cntl_ma57[5];    
+<a name="l00332"></a>00332         <span class="keywordtype">double</span>* fact_ma57;      
+<a name="l00334"></a>00334         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> lfact_ma57;      
+<a name="l00336"></a>00336         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a>* ifact_ma57;     
+<a name="l00338"></a>00338         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> lifact_ma57;     
+<a name="l00340"></a>00340         <span class="keywordtype">bool</span> have_factorization;
+<a name="l00342"></a>00342         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> neig;                
+<a name="l00344"></a>00344         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a> rank;                
+<a name="l00346"></a>00346         <a class="code" href="Types_8hpp.html#afa5bade27e17f3e9187568f2fce8bf12">fint_t</a>* pivots;         
+<a name="l00347"></a>00347 };
+<a name="l00348"></a>00348 
+<a name="l00349"></a>00349 <span class="preprocessor">#endif </span><span class="comment">/* SOLVER_MA57 */</span>
 <a name="l00350"></a>00350 
-<a name="l00351"></a>00351 <span class="preprocessor">#ifdef SOLVER_NONE</span>
-<a name="l00352"></a>00352 <span class="preprocessor"></span>
-<a name="l00360"></a>00360 <span class="keyword">class </span>DummySparseSolver: <span class="keyword">public</span> <a class="code" href="classSparseSolver.html" title="Base class for linear solvers that are used in a Schur-complement implementation in qpOASES...">SparseSolver</a>
-<a name="l00361"></a>00361 {
-<a name="l00362"></a>00362     <span class="comment">/*</span>
-<a name="l00363"></a>00363 <span class="comment">     *  PUBLIC MEMBER FUNCTIONS</span>
-<a name="l00364"></a>00364 <span class="comment">     */</span>
-<a name="l00365"></a>00365     <span class="keyword">public</span>:
-<a name="l00369"></a>00369         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a875146c92fbf3ea67cfc17233ba391e9">setMatrixData</a>(  <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> dim,                  
-<a name="l00370"></a>00370                                             <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> numNonzeros,          
-<a name="l00371"></a>00371                                             <span class="keyword">const</span> <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>* <span class="keyword">const</span> airn,    
-<a name="l00372"></a>00372                                             <span class="keyword">const</span> <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>* <span class="keyword">const</span> acjn,    
-<a name="l00373"></a>00373                                             <span class="keyword">const</span> <a class="code" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>* <span class="keyword">const</span> avals   
-<a name="l00374"></a>00374                                             );
-<a name="l00375"></a>00375 
-<a name="l00377"></a>00377         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a9005259bc966a2339b3dbf9a6229b9f6">factorize</a>( );
-<a name="l00378"></a>00378 
-<a name="l00380"></a>00380         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a9d643b71416b4ac87de8bc1a5ac191be">solve</a>(  <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> dim,                  
-<a name="l00381"></a>00381                                     <span class="keyword">const</span> <a class="code" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>* <span class="keyword">const</span> rhs,    
-<a name="l00382"></a>00382                                     <a class="code" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>* <span class="keyword">const</span> sol           
-<a name="l00383"></a>00383                                     );
-<a name="l00384"></a>00384 };
-<a name="l00385"></a>00385 
-<a name="l00386"></a>00386 <span class="preprocessor">#endif // SOLVER_NONE</span>
-<a name="l00387"></a>00387 <span class="preprocessor"></span>
+<a name="l00351"></a>00351 
+<a name="l00352"></a>00352 <span class="preprocessor">#ifdef SOLVER_NONE</span>
+<a name="l00353"></a>00353 <span class="preprocessor"></span>
+<a name="l00361"></a>00361 <span class="keyword">class </span>DummySparseSolver: <span class="keyword">public</span> <a class="code" href="classSparseSolver.html" title="Base class for linear solvers that are used in a Schur-complement implementation in qpOASES...">SparseSolver</a>
+<a name="l00362"></a>00362 {
+<a name="l00363"></a>00363     <span class="comment">/*</span>
+<a name="l00364"></a>00364 <span class="comment">     *  PUBLIC MEMBER FUNCTIONS</span>
+<a name="l00365"></a>00365 <span class="comment">     */</span>
+<a name="l00366"></a>00366     <span class="keyword">public</span>:
+<a name="l00370"></a>00370         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a875146c92fbf3ea67cfc17233ba391e9">setMatrixData</a>(  <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> dim,                  
+<a name="l00371"></a>00371                                             <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> numNonzeros,          
+<a name="l00372"></a>00372                                             <span class="keyword">const</span> <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>* <span class="keyword">const</span> airn,    
+<a name="l00373"></a>00373                                             <span class="keyword">const</span> <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a>* <span class="keyword">const</span> acjn,    
+<a name="l00374"></a>00374                                             <span class="keyword">const</span> <a class="code" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>* <span class="keyword">const</span> avals   
+<a name="l00375"></a>00375                                             );
+<a name="l00376"></a>00376 
+<a name="l00378"></a>00378         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a9005259bc966a2339b3dbf9a6229b9f6">factorize</a>( );
+<a name="l00379"></a>00379 
+<a name="l00381"></a>00381         <span class="keyword">virtual</span> <a class="code" href="MessageHandling_8hpp.html#a81d556f613bfbabd0b1f9488c0fa865e" title="Defines all symbols for global return values.">returnValue</a> <a class="code" href="classSparseSolver.html#a9d643b71416b4ac87de8bc1a5ac191be">solve</a>(  <a class="code" href="Types_8hpp.html#ab6fd6105e64ed14a0c9281326f05e623">int_t</a> dim,                  
+<a name="l00382"></a>00382                                     <span class="keyword">const</span> <a class="code" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>* <span class="keyword">const</span> rhs,    
+<a name="l00383"></a>00383                                     <a class="code" href="Types_8hpp.html#acfbb1546e581bff0de2fa030397dc14d">real_t</a>* <span class="keyword">const</span> sol           
+<a name="l00384"></a>00384                                     );
+<a name="l00385"></a>00385 };
+<a name="l00386"></a>00386 
+<a name="l00387"></a>00387 <span class="preprocessor">#endif </span><span class="comment">/* SOLVER_NONE */</span>
 <a name="l00388"></a>00388 
-<a name="l00389"></a>00389 <a class="code" href="Types_8hpp.html#adee2e4c0805d76ae74d10597f96dd70f">END_NAMESPACE_QPOASES</a>
-<a name="l00390"></a>00390 
-<a name="l00391"></a>00391 <span class="preprocessor">#endif  </span><span class="comment">/* QPOASES_SPARSESOLVER_HPP */</span>
-<a name="l00392"></a>00392 
-<a name="l00393"></a>00393 <span class="comment">/*</span>
-<a name="l00394"></a>00394 <span class="comment"> *  end of file</span>
-<a name="l00395"></a>00395 <span class="comment"> */</span>
+<a name="l00389"></a>00389 
+<a name="l00390"></a>00390 <a class="code" href="Types_8hpp.html#adee2e4c0805d76ae74d10597f96dd70f">END_NAMESPACE_QPOASES</a>
+<a name="l00391"></a>00391 
+<a name="l00392"></a>00392 <span class="preprocessor">#endif  </span><span class="comment">/* QPOASES_SPARSESOLVER_HPP */</span>
+<a name="l00393"></a>00393 
+<a name="l00394"></a>00394 <span class="comment">/*</span>
+<a name="l00395"></a>00395 <span class="comment"> *  end of file</span>
+<a name="l00396"></a>00396 <span class="comment"> */</span>
 </pre></div></div><!-- contents -->
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2015 20:54:54 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 3 2017 18:30:09 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

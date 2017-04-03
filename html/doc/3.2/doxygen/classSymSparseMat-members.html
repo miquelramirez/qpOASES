@@ -23,7 +23,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">qpOASES
-   &#160;<span id="projectnumber">3.2.0</span>
+   &#160;<span id="projectnumber">3.2.1</span>
    </div>
    <div id="projectbrief">An Implementation of the Online Active Set Strategy</div>
   </td>
@@ -80,7 +80,9 @@ This is the complete list of members for <a class="el" href="classSymSparseMat.h
   <tr class="memlist"><td><a class="el" href="classMatrix.html#a7d7820b8b02f4abcf82330596b317ad6">SymmetricMatrix::getRow</a>(int_t rNum, const Indexlist *const icols, real_t alpha, real_t *row) const =0</td><td><a class="el" href="classMatrix.html">Matrix</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#a73947fd6f0e37f23f9c0a81407b7edbd">SparseMatrix::getRow</a>(int_t rNum, const Indexlist *const icols, real_t alpha, real_t *row) const </td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classMatrix.html#ac4c0a395cd507ba0801b731765c586f7">SymmetricMatrix::getRowNorm</a>(int_t rNum, int_t type=2) const =0</td><td><a class="el" href="classMatrix.html">Matrix</a></td><td><code> [pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classMatrix.html#a7809892ec8eefd5963915b56564917ed">SymmetricMatrix::getRowNorm</a>(real_t *norm, int_t type=2) const =0</td><td><a class="el" href="classMatrix.html">Matrix</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#a755fa45043edaf2248291bf01a830c49">SparseMatrix::getRowNorm</a>(int_t rNum, int_t type=2) const </td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#a222ea0b4e5a28e45397b1398480d9a79">SparseMatrix::getRowNorm</a>(real_t *norm, int_t type=2) const </td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classMatrix.html#a57739be263e4f18a9e742a88c78aa287">SymmetricMatrix::getSparseSubmatrix</a>(const Indexlist *const irows, const Indexlist *const icols, int_t rowoffset, int_t coloffset, int_t &amp;numNonzeros, int_t *irn, int_t *jcn, real_t *avals, BooleanType only_lower_triangular=BT_FALSE) const </td><td><a class="el" href="classMatrix.html">Matrix</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classMatrix.html#a35a8d294ce8440359ba5585253aafe00">SymmetricMatrix::getSparseSubmatrix</a>(const Indexlist *const irows, int_t idx_icol, int_t rowoffset, int_t coloffset, int_t &amp;numNonzeros, int_t *irn, int_t *jcn, real_t *avals, BooleanType only_lower_triangular=BT_FALSE) const </td><td><a class="el" href="classMatrix.html">Matrix</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classMatrix.html#a88b6a82d3d8b96f8bdce14719807f703">SymmetricMatrix::getSparseSubmatrix</a>(int_t idx_row, const Indexlist *const icols, int_t rowoffset, int_t coloffset, int_t &amp;numNonzeros, int_t *irn, int_t *jcn, real_t *avals, BooleanType only_lower_triangular=BT_FALSE) const </td><td><a class="el" href="classMatrix.html">Matrix</a></td><td><code> [virtual]</code></td></tr>
@@ -97,6 +99,7 @@ This is the complete list of members for <a class="el" href="classSymSparseMat.h
   <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#abef34a6737a6253676e85ea7350e882b">nRows</a></td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classMatrix.html#acc4e1dc7fa487a0c2638d88236fe35f8">SymmetricMatrix::print</a>(const char *name=0) const =0</td><td><a class="el" href="classMatrix.html">Matrix</a></td><td><code> [pure virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#a04660176714eb90ea2457d34d1f37b6b">SparseMatrix::print</a>(const char *name=0) const </td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#a0b1ea9f7a3b65c583244d94acb9ea658">setVal</a>(const real_t *newVal)</td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td><code> [virtual]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#ac010252479e500b34324cb10c9dd4e98">SparseMatrix</a>()</td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#a217f2c93982407f7b8b81c189be329bd">SparseMatrix</a>(int_t nr, int_t nc, sparse_int_t *r, sparse_int_t *c, real_t *v)</td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classSparseMatrix.html#a0314dc0fa81c0cbedda7e8974dec3b80">SparseMatrix</a>(int_t nr, int_t nc, int_t ld, const real_t *const v)</td><td><a class="el" href="classSparseMatrix.html">SparseMatrix</a></td><td></td></tr>
@@ -123,7 +126,7 @@ This is the complete list of members for <a class="el" href="classSymSparseMat.h
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 1 2015 20:54:57 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 3 2017 18:30:10 for qpOASES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
