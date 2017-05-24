@@ -8,13 +8,13 @@ ghorn    = rw
 djanka   = rw
 mkudruss = rw
 swalter  = rw
-ChrisHoff = rw
+dcebulla = rw
 [qpOASES:/branches]
 potschka = rw
 ckirches = rw
 ghorn    = rw
 djanka   = rw
-ChrisHoff = rw
+dcebulla = rw
 [qpOASES:/misc]
 potschka = rw
 ckirches = rw
